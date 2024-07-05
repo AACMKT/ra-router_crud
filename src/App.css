@@ -1,0 +1,258 @@
+#root {
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 50%;
+  max-width: 900px;
+  min-width: 700px;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #eeecec;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 162px);
+  overflow-y: scroll;
+  border: 1px soltd transparent;
+  border-radius: 10px;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+ 
+.content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.card {
+  padding: 4px;
+  width: 100%;
+  min-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.title-alignment {
+  display: flex;
+  align-items: start;
+}
+
+.info-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: nowrap;
+  margin-left: 12px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.reaction {
+  margin-left: 12px;
+}
+
+.reaction-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  border: 2px solid darkgray;
+  border-radius: 10px;
+}
+
+input {
+  background-color: white;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: none;
+  color: darkgray;
+}
+
+input:hover,
+input:active,
+input:focus {
+  border: none;
+  outline: none;
+}
+
+.res-input {
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.pictograms {
+  width: 20%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nickname {
+  font-weight: bold;
+  color: rgb(54, 54, 124);
+}
+
+.controls-bar {
+  text-align: end;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.card-menu {
+  display: flex;
+  width: 100%;
+}
+
+.card-menu__tab{
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-menu__tab:not(:first-child) {
+  border-left: 2px solid darkgray;
+}
+
+.icon-offset {
+  margin: auto 10px auto 0;
+}
+
+h6 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.top-border {
+  display: flex;
+  border-top: 2px solid darkgrey;
+}
+
+.card-menu__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 12px;
+  width: calc(100% - 30px);
+}
+
+.align-bottom {
+  display: flex;
+  align-items: end;
+  margin-left: 12px;
+}
+
+.align-right {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+
+.content-type {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  padding-left: 12px;
+  background-color: #f8f5f5;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  height: 40px;
+  width: 48%;
+}
+
+.no-border {
+  border: none;
+}
+
+.new-post {
+  min-width: 90%;
+}
